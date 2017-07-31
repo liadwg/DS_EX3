@@ -1,5 +1,6 @@
 import mincemeat
 
+
 def ps1_map(k, v):
     words = v.split(" ")
     yield (words[0], words[2]), words[1]

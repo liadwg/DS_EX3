@@ -1,0 +1,19 @@
+Stage 1:
+========
+map(k, v):
+    words = v.split()
+    yield (words[0], words[2]), words[1]
+
+
+reduce(k, vs):
+    return set(vs)
+
+Stage 2:
+========
+map(k, v):
+    for pair in get_all_pair_combinations(v):
+        yield pair, 1
+
+
+reduce(k, vs):
+    return sum(vs)

@@ -1,0 +1,8 @@
+map(k, v):
+    for vertex in set(v):
+        if vertex != k:
+            yield k, 1
+
+
+reduce(k, vs):
+    return sum(vs)
