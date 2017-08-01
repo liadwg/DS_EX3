@@ -1,3 +1,7 @@
+========================
+Check Clique Pseudo Code
+========================
+
 map(k, v):
     for vertex in set(v):
         if vertex != k:

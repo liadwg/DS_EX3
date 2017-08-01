@@ -1,0 +1,12 @@
+===================
+K-Means Pseudo Code
+===================
+
+map(k, v):
+    for c in v:
+        if distance(c, k) < distance(closest_center, k):
+            closest_center = c
+    yield c, k
+
+reduce(k, vs):
+    return mean(vs), vs
